@@ -10,8 +10,8 @@ terraform {
 # Use AWS Terraform provider
 provider "aws" {
   region = "us-east-1"
-  access_key = "AKIAQTUGGBQ5AURAFR77"
-  secret_key = "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"
+  access_key = "${var.access_key}"
+  secret_key = "${var.secret_key}"
 }
 
 # Create EC2 instance
