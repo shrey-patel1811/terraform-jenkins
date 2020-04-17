@@ -3,7 +3,7 @@ variable "instance_count" {
 }
 variable "key_name" {
   description = "Private key name to use with instance"
-  default     = "shrKey"
+  default     = "shrkey"
 }
 
 variable "instance_type" {
