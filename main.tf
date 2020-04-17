@@ -10,13 +10,14 @@ terraform {
 # Use AWS Terraform provider
 provider "aws" {
   region = "us-east-1"
+  access_key = "AKIAQTUGGBQ5AURAFR77"
+  secret_key = "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"
 }
 
 # Create EC2 instance
 resource "aws_instance" "default" {
   ami                    = var.ami
   count                  = var.instance_count
-  key_name               = var.key_name
   vpc_security_group_ids = [aws_security_group.default.id]
   source_dest_check      = false
   instance_type          = var.instance_type
