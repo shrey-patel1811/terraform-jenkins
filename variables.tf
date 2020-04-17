@@ -2,13 +2,6 @@ variable "instance_count" {
   default = 1
 }
 
-variable "key_name" {
-  description = "Private key name to use with instance"
- #default     = "terraform"
- access_key = "AKIAQTUGGBQ5AURAFR77"
-  secret_key = "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"
-}
-
 variable "instance_type" {
   description = "AWS instance type"
   default     = "t2.micro"
